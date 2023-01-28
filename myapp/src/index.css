@@ -1,1 +1,87 @@
+*,*::after,*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html{
+  font-size: 18px;
+}
+body{
+  font-family: Arial, sans-serif;
+}
+h1 {
+  background-color: rgb(33, 33, 33);
+  color: aliceblue;
+  text-align:center;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.issues-page {
+  padding: 20px;
+  width: 95%;
+  margin: auto;
+  height: 100vh;
+  font-size: 1rem;
+}
+.issues-page ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid lightgrey;
+  border-bottom: 0;
+  border-radius: 10px;
+}
+.list{
+  padding: 10px;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.issues-page li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid lightgrey;
+}
+
+/* Style for the issue title */
+.issues-page li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.issues-page li a:hover{
+  color: rgb(32, 137, 178);
+}
+
+.icon{
+  padding-right: 8px;
+  /* border: 2px solid green; */
+  color:green;
+}
+p{
+  padding: 10px;
+  padding-left:30px ;
+  font-size: 0.8rem;
+  color: gray;
+}
+.btn-group{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.issues-page button {
+  background-color: blue; /* Green */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 30px 30px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+.issues-page button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}

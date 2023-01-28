@@ -9,7 +9,7 @@ const App = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(5);
   const totalItems = issues.length;
-  const totalPages = totalItems / itemsPerPage;
+  const totalPages =Math.ceil(totalItems / itemsPerPage) ;
 
   const handlePreviousPage = ()=> {
     if (currentPage > 1) {
