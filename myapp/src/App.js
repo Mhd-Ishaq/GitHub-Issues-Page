@@ -35,7 +35,12 @@ const App = () => {
   }, [currentPage]);
 
   if (isLoading) {
-    return <p>Loading...</p>;
+    return(
+      <>
+      <h1>GitHub Issues Page</h1>
+      <p>Loading...</p>
+      </>
+    ) 
   }
   return (
     <>
