@@ -85,3 +85,26 @@ p{
   background-color: gray;
   cursor: not-allowed;
 }
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .issues-page {
+  width: 100%;
+  }
+  .comment{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+  .comment{
+    display: none;
+  }
+}
